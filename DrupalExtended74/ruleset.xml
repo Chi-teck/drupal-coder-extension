@@ -5,5 +5,9 @@
   <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator"/>
   <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
-  <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator"/>
+  <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator">
+    <properties>
+      <property name="minDigitsBeforeDecimalPoint" value="6"/>
+    </properties>
+  </rule>
 </ruleset>
