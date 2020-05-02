@@ -2,7 +2,9 @@
 <ruleset name="DrupalExtended">
   <description>An extension of Drupal coding standards (PHP 7.4+).</description>
   <rule ref="../DrupalExtended73"/>
-  <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
+    <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification"/>
+  </rule>
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator"/>
   <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
   <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator">
