@@ -9,7 +9,7 @@ Install the standard locally through Composer.
 composer require --dev chi-teck/drupal-coder-extension
 ```
 
-Add "DrupalExtended" standard to your project's ruleset.xml along with other Drupal Coding Standards.
+Add "DrupalExtended" standard to your project's phpcs.xml along with other installed Drupal Coding Standards.
 The actual name of the standard depends on PHP version you use.
 
 ```xml
