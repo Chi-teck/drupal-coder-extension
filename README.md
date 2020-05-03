@@ -38,7 +38,7 @@ A complete example of `phpcs` configuration for Drupal 8+ sites powered by PHP 7
   <!-- Exclude vendors. -->
   <exclude-pattern>./docroot/themes/custom/example/node_modules</exclude-pattern>
   <rule ref="vendor/drupal/coder/coder_sniffer/Drupal">
-    <!-- Exclude in favor of native property typehints. -->
+    <!-- Exclude in favor of native typehints. -->
     <exclude name="Drupal.Commenting.VariableComment.MissingVar"/>
   </rule>
   <rule ref="vendor/drupal/coder/coder_sniffer/DrupalPractice"/>
