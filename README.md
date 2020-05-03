@@ -53,7 +53,7 @@ Run the `phpcs` script to check custom code.
 ```
 Run the `phpcbf` script to automatically correct coding standard violations.
 ```
-./vendor/bin/phpcs -ps --standard=phpcs.xml
+./vendor/bin/phpcbf
 ```
 
 ## Links
