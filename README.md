@@ -1,7 +1,4 @@
 # Extended Drupal Coding Standard
-
-A highly opinionated extension for Drupal coding standards.
-
 This project offers a set of preconfigured rules for PHP Code Sniffer mainly related to new PHP features that are not
 covered by Drupal coding standards yet.
  
