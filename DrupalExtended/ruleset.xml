@@ -69,6 +69,8 @@
     <exclude name="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.RequireYodaComparison"/>
     <exclude name="SlevomatCodingStandard.Exceptions.DisallowNonCapturingCatch"/>
+    <!-- Undocumented. Not suitable for Drupal, because functions grows very heavily. E.g. hook_theme(). -->
+    <exclude name="SlevomatCodingStandard.Files.FunctionLength.FunctionLength"/>
     <exclude name="SlevomatCodingStandard.Files.FileLength"/>
     <exclude name="SlevomatCodingStandard.Files.LineLength"/>
     <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
@@ -138,7 +140,12 @@
   </rule>
   <rule ref="SlevomatCodingStandard.Functions.RequireMultiLineCall">
     <properties>
-      <property name="minLineLength" value="80"/>
+      <!-- This property treated as 'including'. Since 80 is Drupal limit, chop from 81+. -->
+      <property name="minLineLength" value="81"/>
     </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
+    <!-- This can be overwhelming for default rule. -->
+    <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
   </rule>
 </ruleset>
