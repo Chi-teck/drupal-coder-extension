@@ -15,6 +15,7 @@
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
   <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/>
   <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>
+  <rule ref="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators"/>
   <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
   <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
   <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
@@ -26,14 +27,18 @@
       <property name="ignoreUnusedValuesWhenOnlyKeysAreUsedInForeach" value="true"/>
     </properties>
   </rule>
+  <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
+  <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
+  <rule ref="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable"/>
   <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator"/>
   <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction"/>
   <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
   <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
-  <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition"/>
   <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine"/>
   <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
   <rule ref="SlevomatCodingStandard.PHP.ShortList"/>
   <rule ref="SlevomatCodingStandard.PHP.TypeCast"/>
@@ -49,6 +54,7 @@
     </properties>
   </rule>
   <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition"/>
   <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
   <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants"/>
   <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions"/>
@@ -58,4 +64,6 @@
   <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator"/>
+  <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
+  <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
 </ruleset>
