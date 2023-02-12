@@ -3,7 +3,7 @@ This project offers a set of preconfigured rules for PHP Code Sniffer mainly rel
 covered by Drupal coding standards yet.
  
 ## System Requirements
-PHP 7.3+
+PHP 8.1+
 
 ## Installation
 Install the standard locally through Composer. 
@@ -17,7 +17,7 @@ The actual name of the standard depends on PHP version you use. For instance, th
 ```xml
 <?xml version="1.0"?>
 <ruleset name="My Project">
-  <rule ref="vendor/chi-teck/drupal-coder-extension/DrupalExtended73">
+  <rule ref="vendor/chi-teck/drupal-coder-extension/DrupalExtended">
     <!-- Sniffs to exclude. -->
   </rule>
 </ruleset>
@@ -34,12 +34,7 @@ A complete example of `phpcs` configuration for Drupal 8+ sites powered by PHP 7
   <file>./tests</file>
   <!-- Exclude vendors. -->
   <exclude-pattern>./docroot/themes/custom/example/node_modules</exclude-pattern>
-  <rule ref="vendor/drupal/coder/coder_sniffer/Drupal">
-    <!-- Exclude in favor of native typehints. -->
-    <exclude name="Drupal.Commenting.VariableComment.MissingVar"/>
-  </rule>
-  <rule ref="vendor/drupal/coder/coder_sniffer/DrupalPractice"/>
-  <rule ref="vendor/chi-teck/drupal-coder-extension/DrupalExtended74"/>
+  <rule ref="vendor/chi-teck/drupal-coder-extension/DrupalExtended"/>
 </ruleset>
 ```
 

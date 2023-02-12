@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<ruleset name="DrupalExtended">
-  <description>An extension of Drupal coding standards (PHP 8.1+).</description>
-  <rule ref="../DrupalExtended80"/>
-  <!-- No specific rules for PHP 8.1+ yet. -->
-</ruleset>
