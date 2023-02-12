@@ -2,7 +2,12 @@
 <ruleset name="DrupalExtended">
   <description>An extension of Drupal coding standards (PHP 8.0+).</description>
   <rule ref="../DrupalExtended74"/>
-  <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
+    <properties>
+      <property name="shortNullable" value="yes"/>
+      <property name="withSpaces" value="no"/>
+    </properties>
+  </rule>
   <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration"/>
   <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInClosureUse"/>
   <rule ref="SlevomatCodingStandard.Functions.RequireSingleLineCall">
