@@ -62,6 +62,7 @@
   <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
   <rule ref="SlevomatCodingStandard.Commenting.EmptyComment"/>
   <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment"/>
+  <rule ref="SlevomatCodingStandard.Commenting.DisallowOneLinePropertyDocComment"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator"/>
   <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
