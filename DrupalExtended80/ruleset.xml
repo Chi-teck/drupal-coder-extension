@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ruleset name="DrupalExtended">
+  <description>An extension of Drupal coding standards (PHP 8.0+).</description>
+  <rule ref="../DrupalExtended74"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat"/>
+  <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration"/>
+  <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInClosureUse"/>
+  <rule ref="SlevomatCodingStandard.Functions.RequireSingleLineCall">
+    <properties>
+      <property name="maxLineLength" value="80"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Functions.RequireMultiLineCall">
+    <properties>
+      <property name="minLineLength" value="80"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator"/>
+</ruleset>
