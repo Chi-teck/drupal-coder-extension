@@ -6,7 +6,7 @@
     <exclude name="Drupal.Commenting.VariableComment.MissingVar"/>
   </rule>
   <rule ref="vendor/drupal/coder/coder_sniffer/DrupalPractice"/>
-  <rule ref="vendor/slevomat/SlevomatCodingStandard">
+  <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard">
     <!-- Excluded rules based on what enabled in 1.x branch. -->
     <exclude name="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/>
     <exclude name="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
