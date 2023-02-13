@@ -69,6 +69,8 @@
     <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.RequireSingleLineCondition"/>
+    <!-- Excluded, because it can be tricky to refactor all control structures to ternary operator. -->
+    <!-- See: https://github.com/Chi-teck/drupal-coder-extension/pull/5#issuecomment-1427065514 -->
     <exclude name="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.RequireYodaComparison"/>
     <exclude name="SlevomatCodingStandard.Exceptions.DisallowNonCapturingCatch"/>
@@ -82,6 +84,8 @@
     <exclude name="SlevomatCodingStandard.Functions.DisallowTrailingCommaInCall"/>
     <exclude name="SlevomatCodingStandard.Functions.DisallowTrailingCommaInClosureUse"/>
     <exclude name="SlevomatCodingStandard.Functions.DisallowTrailingCommaInDeclaration"/>
+    <!-- Excluded, because it forces control structures to be multiline in some cases, but Drupal discourages that. -->
+    <exclude name="SlevomatCodingStandard.Functions.RequireMultiLineCall"/>
     <exclude name="SlevomatCodingStandard.Functions.FunctionLength"/>
     <exclude name="SlevomatCodingStandard.Functions.StrictCall"/>
     <exclude name="SlevomatCodingStandard.Functions.UnusedParameter"/>
@@ -139,12 +143,6 @@
   <rule ref="SlevomatCodingStandard.Functions.RequireSingleLineCall">
     <properties>
       <property name="maxLineLength" value="80"/>
-    </properties>
-  </rule>
-  <rule ref="SlevomatCodingStandard.Functions.RequireMultiLineCall">
-    <properties>
-      <!-- This property treated as 'including'. Since 80 is Drupal limit, chop from 81+. -->
-      <property name="minLineLength" value="81"/>
     </properties>
   </rule>
   <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
