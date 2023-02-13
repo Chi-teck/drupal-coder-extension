@@ -149,8 +149,8 @@
     <!-- This can be overwhelming for default rule. -->
     <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
   </rule>
-  <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
+  <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
     <!-- This can be overwhelming for default rule. -->
-    <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
+    <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification"/>
   </rule>
 </ruleset>
