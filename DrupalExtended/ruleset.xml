@@ -14,9 +14,11 @@
   <rule ref="vendor/drupal/coder/coder_sniffer/DrupalPractice"/>
 
   <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard">
-    <!-- Excluded rules based on what enabled in 1.x branch. -->
     <exclude name="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/>
+    <!-- Same as 'Squiz.Arrays.ArrayDeclaration.CloseBraceNewLine'. -->
     <exclude name="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
+    <!-- Same as 'Drupal.WhiteSpace.OpenBracketSpacing.OpeningWhitespace' and -->
+    <!-- 'Drupal.WhiteSpace.CloseBracketSpacing.ClosingWhitespace'. -->
     <exclude name="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace"/>
     <!-- Same as 'Squiz.Arrays.ArrayDeclaration.NoCommaAfterLast'. -->
     <exclude name="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
@@ -27,21 +29,28 @@
     <exclude name="SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment"/>
     <exclude name="SlevomatCodingStandard.Classes.BackedEnumTypeSpacing"/>
     <exclude name="SlevomatCodingStandard.Classes.ClassLength"/>
+    <!-- Same as 'Squiz.WhiteSpace.FunctionSpacing.Before'. -->
     <exclude name="SlevomatCodingStandard.Classes.ClassMemberSpacing"/>
     <exclude name="SlevomatCodingStandard.Classes.ClassStructure"/>
     <exclude name="SlevomatCodingStandard.Classes.ConstantSpacing"/>
     <exclude name="SlevomatCodingStandard.Classes.DisallowConstructorPropertyPromotion"/>
     <exclude name="SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition"/>
+    <!-- Same as 'Drupal.Classes.PropertyDeclaration.Multiple'. -->
     <exclude name="SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition"/>
     <exclude name="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces"/>
+    <!-- Nice to have, but will conflict with Drupal's annotations. -->
     <exclude name="SlevomatCodingStandard.Classes.ForbiddenPublicProperty"/>
+    <!-- Same as 'Squiz.WhiteSpace.FunctionSpacing.After'. -->
     <exclude name="SlevomatCodingStandard.Classes.MethodSpacing"/>
+    <!-- Not very useful, because requires spaces even if parent call is the only method contents. -->
     <exclude name="SlevomatCodingStandard.Classes.ParentCallSpacing"/>
     <exclude name="SlevomatCodingStandard.Classes.PropertyDeclaration"/>
     <exclude name="SlevomatCodingStandard.Classes.PropertySpacing"/>
     <exclude name="SlevomatCodingStandard.Classes.RequireAbstractOrFinal"/>
     <exclude name="SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion"/>
+    <!-- Forces for each method, not only constructors. -->
     <exclude name="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature"/>
+    <!-- Not very friendly for constructor property promotion with a single param. -->
     <exclude name="SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature"/>
     <exclude name="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming"/>
     <exclude name="SlevomatCodingStandard.Classes.SuperfluousErrorNaming"/>
@@ -52,12 +61,14 @@
     <exclude name="SlevomatCodingStandard.Classes.TraitUseSpacing"/>
     <exclude name="SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration"/>
     <exclude name="SlevomatCodingStandard.Commenting.DisallowCommentAfterCode"/>
+    <!-- 'Drupal.Commenting.DocComment.SpacingBeforeTags' should cover it. -->
     <exclude name="SlevomatCodingStandard.Commenting.DocCommentSpacing"/>
     <exclude name="SlevomatCodingStandard.Commenting.ForbiddenAnnotations"/>
     <exclude name="SlevomatCodingStandard.Commenting.ForbiddenComments"/>
     <exclude name="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
     <exclude name="SlevomatCodingStandard.Commenting.RequireOneLineDocComment"/>
     <exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/>
+    <!-- Conflicts with Drupal coding standards. -->
     <exclude name="SlevomatCodingStandard.Commenting.UselessInheritDocComment"/>
     <exclude name="SlevomatCodingStandard.Complexity.Cognitive"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>
