@@ -5,6 +5,10 @@
   <rule ref="vendor/drupal/coder/coder_sniffer/Drupal">
     <!-- Exclude in favor of native typehints. See: https://www.drupal.org/project/coding_standards/issues/3238192 -->
     <exclude name="Drupal.Commenting.VariableComment.MissingVar"/>
+    <!-- Conflicts with "SlevomatCodingStandard.TypeHints.DeclareStrictTypes". -->
+    <exclude name="Drupal.WhiteSpace.OpenTagNewline.BlankLine"/>
+    <!-- Conflicts with "<?php declare(strict_types = 1)." -->
+    <exclude name="Drupal.Commenting.FileComment.Missing"/>
   </rule>
 
   <rule ref="vendor/drupal/coder/coder_sniffer/DrupalPractice"/>
@@ -107,7 +111,6 @@
     <exclude name="SlevomatCodingStandard.PHP.ForbiddenClasses"/>
     <exclude name="SlevomatCodingStandard.PHP.ReferenceSpacing"/>
     <exclude name="SlevomatCodingStandard.PHP.RequireExplicitAssertion"/>
-    <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
     <exclude name="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/>
     <exclude name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/>
     <exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
@@ -152,5 +155,11 @@
   <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
     <!-- This can be overwhelming for default rule. -->
     <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification"/>
+  </rule>
+  <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+    <properties>
+      <property name="declareOnFirstLine" value="true"/>
+      <property name="spacesCountAroundEqualsSign" value="1"/>
+    </properties>
   </rule>
 </ruleset>
