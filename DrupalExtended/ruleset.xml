@@ -91,7 +91,9 @@
     <!-- Undocumented. Not suitable for Drupal, because functions grows very heavily. E.g. hook_theme(). -->
     <exclude name="SlevomatCodingStandard.Files.FunctionLength.FunctionLength"/>
     <exclude name="SlevomatCodingStandard.Files.FileLength"/>
+    <!-- Will be problematic in Drupal. -->
     <exclude name="SlevomatCodingStandard.Files.LineLength"/>
+    <!-- Won't work in Drupal because of PSR-4. -->
     <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
     <exclude name="SlevomatCodingStandard.Functions.DisallowArrowFunction"/>
     <exclude name="SlevomatCodingStandard.Functions.DisallowNamedArguments"/>
@@ -106,22 +108,29 @@
     <exclude name="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
     <exclude name="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
     <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
+    <!-- Same as: 'PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter'. -->
     <exclude name="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
     <exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly"/>
     <exclude name="SlevomatCodingStandard.Namespaces.UnusedUses"/>
     <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>
+    <!-- Same as: 'PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter' and -->
+    <!-- 'PSR2.Namespaces.UseDeclaration.SpaceAfterLastUse'. -->
     <exclude name="SlevomatCodingStandard.Namespaces.UseSpacing"/>
+    <!-- We require it by 'SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator'. -->
     <exclude name="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>
     <exclude name="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
     <exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/>
     <exclude name="SlevomatCodingStandard.Operators.NegationOperatorSpacing"/>
     <exclude name="SlevomatCodingStandard.Operators.SpreadOperatorSpacing"/>
+    <!-- Common practice in Drupal community (e.g. hooks in classes). -->
     <exclude name="SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall"/>
+    <!-- Won't work in Drupal. -->
     <exclude name="SlevomatCodingStandard.PHP.DisallowReference"/>
     <exclude name="SlevomatCodingStandard.PHP.ForbiddenClasses"/>
     <exclude name="SlevomatCodingStandard.PHP.ReferenceSpacing"/>
     <exclude name="SlevomatCodingStandard.PHP.RequireExplicitAssertion"/>
     <exclude name="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/>
+    <!-- It can be problematic not only in Drupal, but on specific projects as well. -->
     <exclude name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/>
     <exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
   </rule>
