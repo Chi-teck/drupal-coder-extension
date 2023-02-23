@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Drupal Extended" xsi:noNamespaceSchemaLocation="../vendor/squizlabs/php_codesniffer/phpcs.xsd">
+  <description>An extension of Drupal coding standards.</description>
+
+  <rule ref="vendor/drupal/coder/coder_sniffer/Drupal">
+    <!-- Exclude in favor of native typehints. See: https://www.drupal.org/project/coding_standards/issues/3238192 -->
+    <exclude name="Drupal.Commenting.VariableComment.MissingVar"/>
+    <!-- Conflicts with "SlevomatCodingStandard.TypeHints.DeclareStrictTypes". -->
+    <exclude name="Drupal.WhiteSpace.OpenTagNewline.BlankLine"/>
+    <!-- Conflicts with "<?php declare(strict_types = 1)." -->
+    <exclude name="Drupal.Commenting.FileComment.Missing"/>
+    <!-- Custom projects won't like to follow Drupal's core deprecation rules. -->
+    <!-- Covered by 'SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration'. -->
+    <exclude name="Drupal.Commenting.Deprecated.IncorrectTextLayout"/>
+    <exclude name="Drupal.Commenting.Deprecated.DeprecatedMissingSeeTag"/>
+  </rule>
+
+  <rule ref="vendor/drupal/coder/coder_sniffer/DrupalPractice"/>
+
+  <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard">
+    <exclude name="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/>
+    <!-- Same as 'Squiz.Arrays.ArrayDeclaration.CloseBraceNewLine'. -->
+    <exclude name="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
+    <!-- Same as 'Drupal.WhiteSpace.OpenBracketSpacing.OpeningWhitespace' and -->
+    <!-- 'Drupal.WhiteSpace.CloseBracketSpacing.ClosingWhitespace'. -->
+    <exclude name="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace"/>
+    <!-- Same as 'Squiz.Arrays.ArrayDeclaration.NoCommaAfterLast'. -->
+    <exclude name="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
+    <exclude name="SlevomatCodingStandard.Attributes.AttributeAndTargetSpacing"/>
+    <exclude name="SlevomatCodingStandard.Attributes.AttributesOrder"/>
+    <exclude name="SlevomatCodingStandard.Attributes.DisallowAttributesJoining"/>
+    <exclude name="SlevomatCodingStandard.Attributes.DisallowMultipleAttributesPerLine"/>
+    <exclude name="SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment"/>
+    <exclude name="SlevomatCodingStandard.Classes.BackedEnumTypeSpacing"/>
+    <exclude name="SlevomatCodingStandard.Classes.ClassLength"/>
+    <!-- Same as 'Squiz.WhiteSpace.FunctionSpacing.Before'. -->
+    <exclude name="SlevomatCodingStandard.Classes.ClassMemberSpacing"/>
+    <exclude name="SlevomatCodingStandard.Classes.ClassStructure"/>
+    <exclude name="SlevomatCodingStandard.Classes.ConstantSpacing"/>
+    <exclude name="SlevomatCodingStandard.Classes.DisallowConstructorPropertyPromotion"/>
+    <exclude name="SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition"/>
+    <!-- Same as 'Drupal.Classes.PropertyDeclaration.Multiple'. -->
+    <exclude name="SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition"/>
+    <exclude name="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces"/>
+    <!-- Nice to have, but will conflict with Drupal's annotations. -->
+    <exclude name="SlevomatCodingStandard.Classes.ForbiddenPublicProperty"/>
+    <!-- Same as 'Squiz.WhiteSpace.FunctionSpacing.After'. -->
+    <exclude name="SlevomatCodingStandard.Classes.MethodSpacing"/>
+    <!-- Not very useful, because requires spaces even if parent call is the only method contents. -->
+    <exclude name="SlevomatCodingStandard.Classes.ParentCallSpacing"/>
+    <!-- Forces for each method, not only constructors. -->
+    <exclude name="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature"/>
+    <!-- Not very friendly for constructor property promotion with a single param. -->
+    <exclude name="SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature"/>
+    <exclude name="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming"/>
+    <exclude name="SlevomatCodingStandard.Classes.SuperfluousErrorNaming"/>
+    <exclude name="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming"/>
+    <exclude name="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming"/>
+    <exclude name="SlevomatCodingStandard.Classes.SuperfluousTraitNaming"/>
+    <exclude name="SlevomatCodingStandard.Classes.TraitUseSpacing"/>
+    <!-- 'Drupal.Commenting.DocComment.SpacingBeforeTags' should cover it. -->
+    <exclude name="SlevomatCodingStandard.Commenting.DocCommentSpacing"/>
+    <exclude name="SlevomatCodingStandard.Commenting.ForbiddenAnnotations"/>
+    <exclude name="SlevomatCodingStandard.Commenting.ForbiddenComments"/>
+    <exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/>
+    <!-- Conflicts with Drupal coding standards. -->
+    <exclude name="SlevomatCodingStandard.Commenting.UselessInheritDocComment"/>
+    <exclude name="SlevomatCodingStandard.Complexity.Cognitive"/>
+    <exclude name="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>
+    <exclude name="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing"/>
+    <exclude name="SlevomatCodingStandard.ControlStructures.DisallowNullSafeObjectOperator"/>
+    <exclude name="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator"/>
+    <exclude name="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
+    <exclude name="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
+    <exclude name="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses"/>
+    <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition"/>
+    <!-- Excluded, because it can be tricky to refactor all control structures to ternary operator. -->
+    <!-- See: https://github.com/Chi-teck/drupal-coder-extension/pull/5#issuecomment-1427065514 -->
+    <exclude name="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator"/>
+    <exclude name="SlevomatCodingStandard.ControlStructures.RequireYodaComparison"/>
+    <exclude name="SlevomatCodingStandard.Exceptions.DisallowNonCapturingCatch"/>
+    <!-- Undocumented. Not suitable for Drupal, because functions grows very heavily. E.g. hook_theme(). -->
+    <exclude name="SlevomatCodingStandard.Files.FunctionLength.FunctionLength"/>
+    <exclude name="SlevomatCodingStandard.Files.FileLength"/>
+    <!-- Will be problematic in Drupal. -->
+    <exclude name="SlevomatCodingStandard.Files.LineLength"/>
+    <!-- Won't work in Drupal because of PSR-4. -->
+    <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
+    <exclude name="SlevomatCodingStandard.Functions.DisallowArrowFunction"/>
+    <exclude name="SlevomatCodingStandard.Functions.DisallowNamedArguments"/>
+    <exclude name="SlevomatCodingStandard.Functions.DisallowTrailingCommaInCall"/>
+    <exclude name="SlevomatCodingStandard.Functions.DisallowTrailingCommaInClosureUse"/>
+    <exclude name="SlevomatCodingStandard.Functions.DisallowTrailingCommaInDeclaration"/>
+    <!-- Excluded, because it forces control structures to be multiline in some cases, but Drupal discourages that. -->
+    <exclude name="SlevomatCodingStandard.Functions.RequireMultiLineCall"/>
+    <exclude name="SlevomatCodingStandard.Functions.FunctionLength"/>
+    <exclude name="SlevomatCodingStandard.Functions.StrictCall"/>
+    <exclude name="SlevomatCodingStandard.Functions.UnusedParameter"/>
+    <exclude name="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
+    <exclude name="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
+    <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
+    <!-- Same as: 'PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter'. -->
+    <exclude name="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
+    <exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly"/>
+    <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>
+    <!-- Same as: 'PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter' and -->
+    <!-- 'PSR2.Namespaces.UseDeclaration.SpaceAfterLastUse'. -->
+    <exclude name="SlevomatCodingStandard.Namespaces.UseSpacing"/>
+    <!-- We require it by 'SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator'. -->
+    <exclude name="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>
+    <exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/>
+    <exclude name="SlevomatCodingStandard.Operators.NegationOperatorSpacing"/>
+    <!-- Common practice in Drupal community (e.g. hooks in classes). -->
+    <exclude name="SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall"/>
+    <!-- Won't work in Drupal. -->
+    <exclude name="SlevomatCodingStandard.PHP.DisallowReference"/>
+    <exclude name="SlevomatCodingStandard.PHP.ForbiddenClasses"/>
+    <exclude name="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/>
+    <!-- It can be problematic not only in Drupal, but on specific projects as well. -->
+    <exclude name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/>
+    <exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
+  </rule>
+
+  <!-- Configurations for rules. -->
+  <rule ref="SlevomatCodingStandard.Variables.UnusedVariable">
+    <properties>
+      <property name="ignoreUnusedValuesWhenOnlyKeysAreUsedInForeach" value="true"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces">
+    <properties>
+      <property name="ignoreSpacesInAnnotation" value="true"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing">
+    <properties>
+      <property name="spacesCountBeforeColon" value="0"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator">
+    <properties>
+      <property name="minDigitsBeforeDecimalPoint" value="6"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
+    <properties>
+      <property name="shortNullable" value="yes"/>
+      <property name="withSpaces" value="no"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Functions.RequireSingleLineCall">
+    <properties>
+      <property name="maxLineLength" value="80"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
+    <!-- This can be overwhelming for default rule. -->
+    <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
+  </rule>
+  <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
+    <!-- This can be overwhelming for default rule. -->
+    <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification"/>
+  </rule>
+  <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+    <properties>
+      <property name="declareOnFirstLine" value="true"/>
+      <property name="spacesCountAroundEqualsSign" value="1"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator">
+    <properties>
+      <property name="lineLengthLimit" value="80"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Classes.PropertyDeclaration">
+    <properties>
+      <property name="checkPromoted" value="true"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Classes.PropertySpacing">
+    <properties>
+      <property name="minLinesCountBeforeWithoutComment" value="1"/>
+    </properties>
+  </rule>
+</ruleset>
