@@ -9,6 +9,10 @@
     <exclude name="Drupal.WhiteSpace.OpenTagNewline.BlankLine"/>
     <!-- Conflicts with "<?php declare(strict_types = 1)." -->
     <exclude name="Drupal.Commenting.FileComment.Missing"/>
+    <!-- Custom projects won't like to follow Drupal's core deprecation rules. -->
+    <!-- Covered by 'SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration'. -->
+    <exclude name="Drupal.Commenting.Deprecated.IncorrectTextLayout"/>
+    <exclude name="Drupal.Commenting.Deprecated.DeprecatedMissingSeeTag"/>
   </rule>
 
   <rule ref="vendor/drupal/coder/coder_sniffer/DrupalPractice"/>
