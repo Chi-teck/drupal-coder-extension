@@ -63,6 +63,8 @@
     <exclude name="SlevomatCodingStandard.Commenting.ForbiddenAnnotations"/>
     <exclude name="SlevomatCodingStandard.Commenting.ForbiddenComments"/>
     <exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/>
+    <!-- Conflicts with 'Drupal.Commenting.FunctionComment.WrongStyle'. -->
+    <exclude name="SlevomatCodingStandard.Commenting.RequireOneLineDocComment.MultiLineDocComment"/>
     <!-- Conflicts with Drupal coding standards. -->
     <exclude name="SlevomatCodingStandard.Commenting.UselessInheritDocComment"/>
     <exclude name="SlevomatCodingStandard.Complexity.Cognitive"/>
