@@ -184,4 +184,9 @@
       <property name="minLinesCountBeforeWithoutComment" value="1"/>
     </properties>
   </rule>
+  <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration">
+    <properties>
+      <property name="allowMultiLine" value="true"/>
+    </properties>
+  </rule>
 </ruleset>
