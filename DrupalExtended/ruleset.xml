@@ -73,6 +73,7 @@
     <exclude name="SlevomatCodingStandard.ControlStructures.DisallowNullSafeObjectOperator"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
+    <exclude name="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition"/>
