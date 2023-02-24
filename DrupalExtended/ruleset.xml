@@ -112,6 +112,7 @@
     <!-- We require it by 'SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator'. -->
     <exclude name="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>
     <exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/>
+    <exclude name="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators"/>
     <exclude name="SlevomatCodingStandard.Operators.NegationOperatorSpacing"/>
     <!-- Common practice in Drupal community (e.g. hooks in classes). -->
     <exclude name="SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall"/>
