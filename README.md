@@ -25,6 +25,12 @@ Add `DrupalExtended` standard to your project's `phpcs.xml`.
   <rule ref="vendor/chi-teck/drupal-coder-extension/DrupalExtended">
     <!-- Sniffs to exclude. -->
   </rule>
+    
+  <!-- Override settings for enabled rules or enable that excluded. -->
+  <rule ref="SlevomatCodingStandard.Classes.RequireAbstractOrFinal.ClassNeitherAbstractNorFinal">
+      <exclude-pattern>./src/Exception</exclude-pattern>
+  </rule>
+  <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
 </ruleset>
 ```
 
