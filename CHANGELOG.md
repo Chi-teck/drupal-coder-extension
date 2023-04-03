@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added `CHANGELOG.md` file.
 
+### Changed
+
+- Update Composer dependencies.
+
 ## [2.0.0-alpha2] - 2023-02-24
 
 ### Changed
