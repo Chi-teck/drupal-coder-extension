@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Update Composer dependencies.
+- Exclude `SlevomatCodingStandard.Arrays.AlphabeticallySortedByKeys`.
 
 ## [2.0.0-alpha2] - 2023-02-24
 

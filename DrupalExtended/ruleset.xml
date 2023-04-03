@@ -18,6 +18,7 @@
   <rule ref="vendor/drupal/coder/coder_sniffer/DrupalPractice"/>
 
   <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard">
+    <exclude name="SlevomatCodingStandard.Arrays.AlphabeticallySortedByKeys"/>
     <exclude name="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/>
     <!-- Same as 'Squiz.Arrays.ArrayDeclaration.CloseBraceNewLine'. -->
     <exclude name="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
