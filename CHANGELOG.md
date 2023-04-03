@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0-alpha3] - 2023-04-03
+
 ### Added
 
 - Added `CHANGELOG.md` file.
@@ -14,8 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Update Composer dependencies.
-- Exclude `SlevomatCodingStandard.Arrays.AlphabeticallySortedByKeys`.
-- Exclude `SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly`.
+- Excluded `SlevomatCodingStandard.Arrays.AlphabeticallySortedByKeys`.
+- Excluded `SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly`.
 
 ## [2.0.0-alpha2] - 2023-02-24
 
@@ -49,6 +51,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 3. If you have `<rule ref="vendor/drupal/coder/coder_sniffer/Drupal"/> and/or `<rule ref="vendor/drupal/coder/coder_sniffer/DrupalPractice"/>`  without rules overrides — you can remove them, they're now included by default in `DrupalExtended`.
 4. If you have rules overrides for `Drupal` sniffers, take a look at [current overrides](https://github.com/Chi-teck/drupal-coder-extension/blob/2.x/DrupalExtended/ruleset.xml#L5-L16) of `DrupalExtended`. If this list matches yours, you can simple remove `Drupal` rulesets includes.
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/2.0.0-alpha2...HEAD
+[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/2.0.0-alpha3...HEAD
+[2.0.0-alpha3]: https://github.com/Chi-teck/drupal-coder-extension/compare/2.0.0-alpha2...2.0.0-alpha3
 [2.0.0-alpha2]: https://github.com/Chi-teck/drupal-coder-extension/compare/2.0.0-alpha1...2.0.0-alpha2
 [2.0.0-alpha1]: https://github.com/Chi-teck/drupal-coder-extension/releases/tag/2.0.0-alpha1
