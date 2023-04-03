@@ -83,6 +83,7 @@
     <exclude name="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.RequireYodaComparison"/>
     <exclude name="SlevomatCodingStandard.Exceptions.DisallowNonCapturingCatch"/>
+    <exclude name="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
     <!-- Undocumented. Not suitable for Drupal, because functions grows very heavily. E.g. hook_theme(). -->
     <exclude name="SlevomatCodingStandard.Files.FunctionLength.FunctionLength"/>
     <exclude name="SlevomatCodingStandard.Files.FileLength"/>
