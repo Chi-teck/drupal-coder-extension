@@ -193,4 +193,12 @@
       <property name="allowMultiLine" value="true"/>
     </properties>
   </rule>
+  <rule ref="SlevomatCodingStandard.Commenting.AnnotationName">
+    <properties>
+      <property name="annotations" type="array">
+        <!-- Drupal requires it to be all lowercase. -->
+        <element value="inheritdoc"/>
+      </property>
+    </properties>
+  </rule>
 </ruleset>

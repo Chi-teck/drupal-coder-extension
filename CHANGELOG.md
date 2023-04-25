@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added configuration for `SlevomatCodingStandard.Commenting.AnnotationName` to match Drupal Coding Standards.
+
 ## [2.0.0-alpha3] - 2023-04-03
 
 ### Added
