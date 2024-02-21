@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Updated configuration for rule `SlevomatCodingStandard.TypeHints.DeclareStrictTypes`
+  to be compatible with [Drupal Coding Standards][drupal-cs-declare-strict-type].
+  The rule from `drupal/coder` is overridden because it is disabling
+  `SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing`.
+
 ## [2.0.0-beta1] - 2023-08-11
 
 Tagging alpha4 as beta1. No other changes.
@@ -67,3 +74,5 @@ Tagging alpha4 as beta1. No other changes.
 [2.0.0-alpha3]: https://github.com/Chi-teck/drupal-coder-extension/compare/2.0.0-alpha2...2.0.0-alpha3
 [2.0.0-alpha2]: https://github.com/Chi-teck/drupal-coder-extension/compare/2.0.0-alpha1...2.0.0-alpha2
 [2.0.0-alpha1]: https://github.com/Chi-teck/drupal-coder-extension/releases/tag/2.0.0-alpha1
+
+[drupal-cs-declare-strict-type]: https://www.drupal.org/node/3402544

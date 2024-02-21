@@ -169,8 +169,9 @@
   </rule>
   <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
     <properties>
-      <property name="declareOnFirstLine" value="true"/>
-      <property name="spacesCountAroundEqualsSign" value="1"/>
+      <property name="linesCountBeforeDeclare" value="1"/>
+      <property name="linesCountAfterDeclare" value="1"/>
+      <property name="spacesCountAroundEqualsSign" value="0"/>
     </properties>
   </rule>
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator">
