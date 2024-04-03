@@ -22,7 +22,7 @@ Add `DrupalExtended` standard to your project's `phpcs.xml`.
 <ruleset name="Drupal Extended"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="../vendor/squizlabs/php_codesniffer/phpcs.xsd">
-  <rule ref="vendor/chi-teck/drupal-coder-extension/DrupalExtended">
+  <rule ref="DrupalExtended">
     <!-- Sniffs to exclude. -->
   </rule>
     
@@ -53,7 +53,7 @@ A complete example of `phpcs.xml`:
   <!-- Exclude vendors. -->
   <exclude-pattern>./docroot/themes/custom/example/node_modules</exclude-pattern>
 
-  <rule ref="vendor/chi-teck/drupal-coder-extension/DrupalExtended"/>
+  <rule ref="DrupalExtended"/>
 </ruleset>
 ```
 

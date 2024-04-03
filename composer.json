@@ -1,7 +1,7 @@
 {
     "name": "chi-teck/drupal-coder-extension",
     "description": "An extension of Drupal coding standards.",
-    "type": "library",
+    "type": "phpcodesniffer-standard",
     "license": "GPL-2.0-or-later",
     "require": {
         "php": ">=8.1",
