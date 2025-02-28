@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- The rule `SlevomatCodingStandard.TypeHints.UnionTypeHintFormat` has been
+  replaced by `SlevomatCodingStandard.TypeHints.DNFTypeHintFormat`. Since the
+  former is deprecated, it is explicitly excluded to remove the deprecation
+  warning.
+
 ## [2.0.0-beta3] - 2024-04-03
 
 ### Changed

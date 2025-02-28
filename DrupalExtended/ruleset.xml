@@ -125,6 +125,8 @@
     <!-- It can be problematic not only in Drupal, but on specific projects as well. -->
     <exclude name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/>
     <exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
+    <!-- Deprecated, remove in Slevomat ^9.0. -->
+    <exclude name="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat"/>
   </rule>
 
   <!-- Configurations for rules. -->
@@ -148,10 +150,10 @@
       <property name="minDigitsBeforeDecimalPoint" value="6"/>
     </properties>
   </rule>
-  <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
+  <rule ref="SlevomatCodingStandard.TypeHints.DNFTypeHintFormat">
     <properties>
       <property name="shortNullable" value="yes"/>
-      <property name="withSpaces" value="no"/>
+      <property name="withSpacesAroundOperators" value="no"/>
     </properties>
   </rule>
   <rule ref="SlevomatCodingStandard.Functions.RequireSingleLineCall">
