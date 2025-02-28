@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0-rc1] - 2025-02-28
+
 - The rule `SlevomatCodingStandard.TypeHints.UnionTypeHintFormat` has been
   replaced by `SlevomatCodingStandard.TypeHints.DNFTypeHintFormat`. Since the
   former is deprecated, it is explicitly excluded to remove the deprecation
@@ -86,7 +88,8 @@ Tagging alpha4 as beta1. No other changes.
 3. If you have `<rule ref="vendor/drupal/coder/coder_sniffer/Drupal"/>` and/or `<rule ref="vendor/drupal/coder/coder_sniffer/DrupalPractice"/>`  without rules overrides — you can remove them, they're now included by default in `DrupalExtended`.
 4. If you have rules overrides for `Drupal` sniffers, take a look at [current overrides](https://github.com/Chi-teck/drupal-coder-extension/blob/2.x/DrupalExtended/ruleset.xml#L5-L16) of `DrupalExtended`. If this list matches yours, you can simple remove `Drupal` rulesets includes.
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/2.0.0-beta3...HEAD
+[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/2.0.0-rc1...HEAD
+[2.0.0-rc1]: https://github.com/Chi-teck/drupal-coder-extension/compare/2.0.0-beta3...2.0.0-rc1
 [2.0.0-beta3]: https://github.com/Chi-teck/drupal-coder-extension/compare/2.0.0-beta2...2.0.0-beta3
 [2.0.0-beta2]: https://github.com/Chi-teck/drupal-coder-extension/compare/2.0.0-beta1...2.0.0-beta2
 [2.0.0-beta1]: https://github.com/Chi-teck/drupal-coder-extension/compare/2.0.0-alpha4...2.0.0-beta1
