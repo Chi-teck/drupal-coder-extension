@@ -32,7 +32,6 @@
     <exclude name="SlevomatCodingStandard.Attributes.DisallowAttributesJoining"/>
     <exclude name="SlevomatCodingStandard.Attributes.DisallowMultipleAttributesPerLine"/>
     <exclude name="SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment"/>
-    <exclude name="SlevomatCodingStandard.Classes.BackedEnumTypeSpacing"/>
     <exclude name="SlevomatCodingStandard.Classes.ClassLength"/>
     <!-- Same as 'Squiz.WhiteSpace.FunctionSpacing.Before'. -->
     <exclude name="SlevomatCodingStandard.Classes.ClassMemberSpacing"/>
@@ -62,7 +61,6 @@
     <!-- 'Drupal.Commenting.DocComment.SpacingBeforeTags' should cover it. -->
     <exclude name="SlevomatCodingStandard.Commenting.DocCommentSpacing"/>
     <exclude name="SlevomatCodingStandard.Commenting.ForbiddenAnnotations"/>
-    <exclude name="SlevomatCodingStandard.Commenting.ForbiddenComments"/>
     <exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/>
     <!-- Conflicts with 'Drupal.Commenting.FunctionComment.WrongStyle'. -->
     <exclude name="SlevomatCodingStandard.Commenting.RequireOneLineDocComment.MultiLineDocComment"/>
@@ -75,7 +73,6 @@
     <exclude name="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing"/>
-    <exclude name="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses"/>
     <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineCondition"/>
     <!-- Excluded, because it can be tricky to refactor all control structures to ternary operator. -->

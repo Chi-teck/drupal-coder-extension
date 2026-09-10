@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Require `drupal/coder ^9.0` and PHP `>=8.5`. Coder 8 / PHP CodeSniffer 3 is no
+  longer supported.
+- Stop excluding `SlevomatCodingStandard.Classes.BackedEnumTypeSpacing`,
+  `SlevomatCodingStandard.Commenting.ForbiddenComments` and
+  `SlevomatCodingStandard.ControlStructures.NewWithParentheses`, which Coder 9
+  now enables in the `Drupal` standard itself.
+
 ## [2.0.0-rc2] - 2025-03-10
 
 - Increase minimum version requirement for `slevomat/coding-standard` to
@@ -26,7 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change ruleset name from “Drupal Extended” to “DrupalExtended”.
 - Relative paths to extended rulesets were replaced by their names.
 - Change package type from “library” to “phpcodesniffer-standard”. This will
-  allow `dealerdirect/phpcodesniffer-composer-installer` to detect it and 
+  allow `dealerdirect/phpcodesniffer-composer-installer` to detect it and
   install the standard automatically.
 - Update README.md on how use “DrupalExtended”.
 

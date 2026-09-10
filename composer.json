@@ -4,9 +4,9 @@
     "type": "phpcodesniffer-standard",
     "license": "GPL-2.0-or-later",
     "require": {
-        "php": ">=8.1",
-        "slevomat/coding-standard": "^8.16",
-        "drupal/coder": "^8.3"
+        "php": ">=8.5",
+        "drupal/coder": "^9.0",
+        "slevomat/coding-standard": "^8.25.1"
     },
     "suggest": {
         "squizlabs/php_codesniffer": ""
