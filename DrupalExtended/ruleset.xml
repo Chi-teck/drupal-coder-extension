@@ -101,6 +101,8 @@
     <exclude name="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
     <exclude name="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
     <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
+    <!-- See: https://drupal.org/project/coder/issues/3360163. -->
+    <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
     <!-- Same as: 'PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter'. -->
     <exclude name="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
     <exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly"/>

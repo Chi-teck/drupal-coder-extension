@@ -2,14 +2,14 @@
 
 This project offers a set of preconfigured rules for PHP Code Sniffer mainly related to new PHP features that are not
 covered by Drupal coding standards yet.
- 
+
 ## System Requirements
 
-PHP 8.1+
+PHP 8.5+
 
 ## Installation
 
-Install the standard locally through Composer. 
+Install the standard locally through Composer.
 
 ```shell
 composer require --dev chi-teck/drupal-coder-extension
@@ -25,7 +25,7 @@ Add `DrupalExtended` standard to your project's `phpcs.xml`.
   <rule ref="DrupalExtended">
     <!-- Sniffs to exclude. -->
   </rule>
-    
+
   <!-- Override settings for enabled rules or enable that excluded. -->
   <rule ref="SlevomatCodingStandard.Classes.RequireAbstractOrFinal.ClassNeitherAbstractNorFinal">
       <exclude-pattern>./src/Exception</exclude-pattern>
@@ -44,7 +44,7 @@ A complete example of `phpcs.xml`:
   <description>PHP Code Sniffer configuration for My Project.</description>
   <arg name="colors"/>
   <arg name="extensions" value="php,module,inc,install,theme,info,txt,md,yml"/>
-    
+
   <!-- Paths to scan for problems recursively. -->
   <file>./web/modules/custom</file>
   <file>./web/themes/custom</file>
